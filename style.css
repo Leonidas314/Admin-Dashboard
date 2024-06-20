@@ -21,13 +21,40 @@ body{
     border: 3px dotted black ;
 
 }
-
+.sideboard > h1 ,.top-ul, .bot-ul{
+    border: 2px dotted red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    list-style: none;
+}
 .sideboard{
     grid-area: 1 / 1 / 3 / 2;
+    display: grid;
+    grid-template: 1fr 3fr 3fr / 1fr ;
 }
-
+.side-container > h1{
+    grid-area: 2/1/3/2;
+}
+.top-ul{
+    grid-area: 2/1/3/2;
+}
+.bot-ul{
+    grid-area: 3/1/4/2;
+}
 .header{
     grid-area: 1/2/2/4;
+    display: grid;
+    grid-template-columns: 4fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.headerDivs{
+    border: 2px dotted blue;
+}
+#search{
+    grid-area: 1/1/2/2;
 }
 .projects{
     grid-area: 2/2/3/3;
