@@ -13,7 +13,7 @@ body{
 
     height: 100%;
     width: 100%;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 0.8fr 2.8fr 1.2fr;
     grid-template-rows: 0.75fr 3fr
 }
 
@@ -56,10 +56,36 @@ body{
 #search{
     grid-area: 1/1/2/2;
 }
-.projects{
+#buttonsDiv{
+    grid-area: 2/2/3/4;
+}
+.projectsDiv{
     grid-area: 2/2/3/3;
+    display: grid;
+    grid-template: 1fr 1fr /1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+}
+.project{
+    border: 2px dotted blueviolet;
+    height: 28vh;
+    width: 22vw;
+    justify-self: center;
 }
 .side-container{
     grid-area: auto;
+    display: grid;
+    grid-row: 1fr 1fr;
 }
 
+.side-container > div{
+    border: 2px dotted green;
+}
+
+#anouncements{
+    grid-area: 1/1/2/2;
+}
+#trending{
+    grid-area: auto;
+}
