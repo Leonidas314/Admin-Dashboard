@@ -7,6 +7,7 @@ body{
     display: grid;
     place-items: center;
     height: 100vh;
+    color: darkkhaki;
 }
 #main-container{
     display: grid;
@@ -29,6 +30,7 @@ body{
     justify-content: center;
     gap: 3vh;
     list-style: none;
+    background: linear-gradient(to right, #030115,black,#340438 ,#65276b);
 }
 .sideboard{
     grid-area: 1 / 1 / 3 / 2;
@@ -49,6 +51,7 @@ body{
     display: grid;
     grid-template-columns: 4fr 0.5fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background:linear-gradient(to right,#65276b,#340438,black);
 }
 .headerDivs{
     border: 2px dotted blue;
@@ -66,6 +69,8 @@ body{
     align-items: center;
     justify-content: center;
     gap: 3vh;
+    background:linear-gradient(to right,#65276b,#340438,black);
+
 }
 .project{
     border: 2px dotted blueviolet;
@@ -83,9 +88,29 @@ body{
     border: 2px dotted green;
 }
 
-#anouncements{
+#anouncementsDiv{
     grid-area: 1/1/2/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
 }
-#trending{
-    grid-area: auto;
+.anouncements{
+    height: 5vh;
+    width: 20vw;
+    border: 3px dotted darkred;
+}
+#trendingDiv{
+    grid-area: 2/1/3/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+}
+.trending{
+    height: 5vh;
+    width: 20vw;
+    border: 3px dotted darkorange;
 }
