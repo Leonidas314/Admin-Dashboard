@@ -9,6 +9,7 @@ body{
     height: 100vh;
     color: white;
 }
+
 #main-container{
     display: grid;
     height: 100%;
@@ -79,7 +80,7 @@ body{
     display: grid;
     grid-template-columns: 4fr 0.5fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background:rgb(1, 2, 6);
+    background: linear-gradient(to right, rgba(0, 255, 255, 0.5),lightgrey,rgba(0, 255, 255, 0.505),lightgrey);
 }
 .headerDivs{
     border: 2px dotted blue;
@@ -121,19 +122,22 @@ body{
     align-items: center;
     justify-content: center;
     gap: 3vh;
-    background: radial-gradient(circle at center top ,lightgrey, rgba(0, 255, 255, 0.506));
+    background: radial-gradient(circle at center ,lightgrey, rgba(0, 255, 255, 0.506));
 }
 .project{
     border: 2px dotted blueviolet;
     height: 28vh;
     width: 22vw;
     justify-self: center;
+    background: linear-gradient(to left top, lightgoldenrodyellow,lightgrey);
+    border-radius: 10%;
 }
 .side-container{
     grid-area: auto;
     display: grid;
     grid-row: 1fr 1fr;
-    background:rgb(2, 7, 19)}
+    background:linear-gradient(to right, rgba(0, 255, 255, 0.506), lightgrey)
+}
 
 .side-container > div{
     border: 2px dotted green;
@@ -163,7 +167,7 @@ body{
 .trending{
     height: 5vh;
     width: 20vw;
-    border: 3px dotted darkorange;
+    border: 3px dotted lightgoldenrodyellow;
 }
 
 #buttonsDiv{
@@ -174,7 +178,7 @@ body{
     gap: 1vw;
 }
 .headerButton {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #33ad8d, #85b4ccda);
     border: none;
     color: white;
     padding: 15px 32px;
