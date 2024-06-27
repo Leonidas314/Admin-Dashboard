@@ -11,7 +11,6 @@ body{
 }
 #main-container{
     display: grid;
-
     height: 100%;
     width: 100%;
     grid-template-columns: 0.8fr 2.8fr 1.2fr;
@@ -47,7 +46,8 @@ body{
     grid-area: 1 / 1 / 3 / 2;
     display: grid;
     grid-template: 1fr 3fr 3fr / 1fr ;
-    background:rgb(17, 19, 18);
+    background:linear-gradient(to bottom left, rgba(0, 255, 255, 0.506) , lightgrey) /*50% 50% / 50% 50%*/;
+    color: black;
 }
 .side-container > h1{
     grid-area: 2/1/3/2;
@@ -61,8 +61,6 @@ body{
 .top-ul > li , .bot-ul > li{
     display: flex;
     flex-direction: row;
-    border: 1px solid salmon;
-    border-radius: 25px;
 }
 .top-ul > li > p , .bot-ul > li > p{
     display: flex;
@@ -86,7 +84,7 @@ body{
 .headerDivs{
     border: 2px dotted blue;
 }
-#bellImg{
+#bellImg , #searchImgDiv{
     width: 50px;
     height: 50px;
     overflow: hidden;
@@ -97,6 +95,11 @@ body{
  justify-content: center;
 }
 #bell{
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+#searchImg{
     width: 100%;
     height: auto;
     border-radius: 100%;
@@ -118,7 +121,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 3vh;
-    background: lightcyan;
+    background: radial-gradient(circle at center top ,lightgrey, rgba(0, 255, 255, 0.506));
 }
 .project{
     border: 2px dotted blueviolet;
@@ -200,4 +203,7 @@ input {
     width :calc(80%);
     border: 2px solid #ccc; 
     border-radius: 20px; 
+}
+#searchImg{
+    
 }
